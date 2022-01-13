@@ -418,18 +418,18 @@
 				<p>
 					<span class="com">01</span> <span class="type">void</span> <span class="func">setLastWorld16x2</span>() {
 					<span class="com">02</span>
-					<span class="com">03</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">for</span>(<span class="type">int</span> j <span class="logic">=</span> <span class="value">0</span>; j <span class="logic"><</span> <span class="value">16</span>; j<span class="logic">++</span>) {
+					<span class="com">03</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">for</span>(<span class="type">int</span> i <span class="logic">=</span> <span class="value">0</span>; i <span class="logic"><</span> <span class="value">2</span>; i<span class="logic">++</span>) {
 					<span class="com">04</span>
-					<span class="com">05</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;world16x2_lastUpdate[i][j] <span class="logic">=</span> world16x2[i][j];
+					<span class="com">05</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">for</span>(<span class="type">int</span> j <span class="logic">=</span> <span class="value">0</span>; j <span class="logic"><</span> <span class="value">16</span>; j<span class="logic">++</span>) {
 					<span class="com">06</span>
-					<span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;}
+					<span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;world16x2_lastUpdate[i][j] <span class="logic">=</span> world16x2[i][j];
 					<span class="com">08</span>
-					<span class="com">09</span> }
-					<!--<span class="com">10</span>
-					<span class="com">11</span>
+					<span class="com">09</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+					<span class="com">10</span>
+					<span class="com">11</span> &nbsp;&nbsp;&nbsp;&nbsp;}
 					<span class="com">12</span>
-					<span class="com">13</span>
-					<span class="com">14</span>
+					<span class="com">13</span> }
+					<!--<span class="com">14</span>
 					<span class="com">15</span>
 					<span class="com">16</span>-->
 				</p>
@@ -438,35 +438,6 @@
 		</section>
 		<section class="section s15">
 
-		<h1>
-			Menü
-		</h1>
-
-		  <div class="code c1">
-			  <p>
-				  <span class="com">01</span> <span class="type">void</span> <span class="func">movementMenue</span>() {
-				  <span class="com">02</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="func">direction</span>(); <span class="com">//Update the direction</span>
-				  <span class="com">03</span>
-				  <span class="com">04</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">if</span>(direc[<span class="value">0</span>] <span class="logic">==</span> -1</span> <span class="logic">&&</span> menuePos <span class="logic">!=</span> 1</span>) {
-				  <span class="com">05</span>
-				  <span class="com">06</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;menuePos<span class="logic">--</span>;
-				  <span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;} <span class="op">else if</span>(direc[<span class="value">0</span>] <span class="logic">==</span> 1</span> <span class="logic">&&</span> menuePos <span class="logic">!=</span> 4</span>) {
-				  <span class="com">08</span>
-				  <span class="com">09</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;menuePos<span class="logic">++</span>;
-				  <span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;} <span class="op">else if</span>(direc[<span class="value">0</span>] <span class="logic">==</span> 2</span>) {
-				  <span class="com">11</span>
-				  <span class="com">12</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;game <span class="logic">=</span> menuePos;
-				  <span class="com">13</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="func">gameStart</span>();
-				  <span class="com">14</span>
-				  <span class="com">15</span> &nbsp;&nbsp;&nbsp;&nbsp;}
-				  <span class="com">16</span> }
-			  </p>
-		  </div>
-
-
-		</section>
-		<section class="section s16">
-
 			<h1>
 				Menü
 			</h1>
@@ -474,7 +445,7 @@
 			<div class="code c1">
 				<p>
 					<span class="com">01</span> <span class="com">//menue</span>
-					<span class="com">02</span> <span class="type">char</span> selection[<span class="value">6</span>][<span class="value">17</span>] <span class="logic">=</span> {
+					<span class="com">02</span> <span class="type">char</span> selection[<span class="value">6</span>][<span class="value">16</span>] <span class="logic">=</span> {
 					<span class="com">03</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="char">"----------------",</span>
 					<span class="com">04</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="char">"2P - Catch",</span>
 					<span class="com">05</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="char">"1P - Snake",</span>
@@ -491,6 +462,35 @@
 					<span class="com">16</span> &nbsp;&nbsp;&nbsp;&nbsp;lcd.<span class="func">print</span>(selection[menuePos <span class="logic">+</span> <span class="value">1</span>]);
 				</p>
 			</div>
+
+		</section>
+		<section class="section s16">
+
+			<h1>
+				Menü
+			</h1>
+
+			<div class="code c1">
+				<p>
+					<span class="com">01</span> <span class="type">void</span> <span class="func">movementMenue</span>() {
+					<span class="com">02</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="func">direction</span>(); <span class="com">//Update the direction</span>
+					<span class="com">03</span>
+					<span class="com">04</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">if</span>(direc[<span class="value">0</span>] <span class="logic">==</span> -1</span> <span class="logic">&&</span> menuePos <span class="logic">!=</span> 1</span>) {
+					<span class="com">05</span>
+					<span class="com">06</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;menuePos<span class="logic">--</span>;
+					<span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;} <span class="op">else if</span>(direc[<span class="value">0</span>] <span class="logic">==</span> 1</span> <span class="logic">&&</span> menuePos <span class="logic">!=</span> 4</span>) {
+					<span class="com">08</span>
+					<span class="com">09</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;menuePos<span class="logic">++</span>;
+					<span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;} <span class="op">else if</span>(direc[<span class="value">0</span>] <span class="logic">==</span> 2</span>) {
+					<span class="com">11</span>
+					<span class="com">12</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;game <span class="logic">=</span> menuePos;
+					<span class="com">13</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="func">gameStart</span>();
+					<span class="com">14</span>
+					<span class="com">15</span> &nbsp;&nbsp;&nbsp;&nbsp;}
+					<span class="com">16</span> }
+				</p>
+			</div>
+
 
 		</section>
 		<section class="section s17">
