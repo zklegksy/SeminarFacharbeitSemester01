@@ -45,11 +45,11 @@
 
 				  <p class="description">
 
-						Projekt 1:
+						<span class="project">Projekt 1:
 
-						Binäres Leuchten Display
+						Binäres Leuchten Display</span>
 
-
+						<img src="./img/AufbauBinLampenDisplay_LeonKalliardos.jpg" width="100%">
 				  </p>
 
 			  </div>
@@ -58,9 +58,11 @@
 
 				  <p class="description">
 
-						Thema 2:
+						<span class="project">Projekt 2:
 
-					  Arduino Spielekonsole
+					  	Arduino Spielekonsole</span>
+
+					  <img src="./img/AufbauSpielekonsole_LeonKalliardos.jpg" width="100%">
 
 				  </p>
 
@@ -74,22 +76,25 @@
 		<h1>
 			Binäres Lampen Display
 		</h1>
-		  <img src="./img/SchaltplanBinLampenDisplay_LeonKalliardos.PNG" alt="Schaltplanm">
-		<!--<div class="row">
+
+
+		<div class="row">
 
 			<div class="column">
 
-				<img src="./img/SchaltplanBinLampenDisplay_LeonKalliardos.PNG" alt="Schaltplanm" style="width:100%">
+				<img src="./img/AufbauBinLampenDisplay_LeonKalliardos.jpg" alt="Aufbau" class="startProjekt">
 
 			</div>
 
 			<div class="column">
 
-				<img src="./img/AufbauBinLampenDisplay_LeonKalliardos.jpg" alt="Aufbau" style="width:100%">
+				<img src="./img/SchaltplanBinLampenDisplay_LeonKalliardos.PNG" alt="Schaltplan" class="startProjekt">
 
 			</div>
 
-		</div>	-->
+		</div>
+
+
 
 		</section>
 		<section class="section s5">
@@ -97,6 +102,41 @@
 		<h1>
 			Hardware und Aufbau
 		</h1>
+
+		<div class="row">
+
+			<div class="column">
+
+				<ul class="hard">
+
+					<li>&#9744; 1x Arduino Uno</li>
+					<li>&#9744; 1x Breadboard</li>
+					<li>&#9744; 1x LCD-Display</li>
+					<li>&#9744; 1x LCD-Display</li>
+					<li>&#9744; 2x Joysticks</li>
+					<li>&#9744; 16x Kabel</li>
+
+				</ul>
+
+			</div>
+
+			<div class="column">
+
+				<ul class="hard">
+
+					<li>&#9744; Rechenzentrum</li>
+					<li>&#9744; Steckplatz für alle Komponenten</li>
+					<li>&#9744; Display der Konsole</li>
+					<li>&#9744; Management der Kabel</li>
+					<li>&#9744; Input Devices der Konsole</li>
+					<li>&#9744; Verbindung aller Komponenten</li>
+
+
+				</ul>
+
+			</div>
+
+		</div>
 
 		</section>
 		<section class="section s6">
@@ -113,10 +153,10 @@
 				  <span class="com">04</span>
 				  <span class="com">05</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">if</span>(num <span class="logic">%</span> <span class="value">2</span> <span class="logic">==</span> 0</span>) { <span class="com">//Wenn die Zahl gerade ist:</span>
 				  <span class="com">06</span>
-				  <span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bin[i] <span class="logic">=</span> <span class="value">0</span>; <span class="com">//Der Wert der entsprechenden Position wird auf 0(aus) gesetzt</span>
+				  <span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bin[i] <span class="logic">=</span> <span class="value">0</span>;<span class="com">//Der Wert der entsprechenden Position wird auf 0(aus) gesetzt</span>
 				  <span class="com">08</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <span class="op">else</span> { <span class="com">//Wenn die Zahl ungerade ist:</span>
 				  <span class="com">09</span>
-				  <span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bin[i] <span class="logic">=</span> <span class="value">1</span>; <span class="com">//Der Wert der entsprechenden Position wird auf 1(an) gesetzt</span>
+				  <span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bin[i] <span class="logic">=</span> <span class="value">1</span>;<span class="com">//Der Wert der entsprechenden Position wird auf 1(an) gesetzt</span>
 				  <span class="com">11</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
 				  <span class="com">12</span>
 				  <span class="com">13</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num <span class="logic">=</span> num <span class="logic">/</span> <span class="value">2</span>; <span class="com">//Die Zahl wird halbiert</span>
@@ -133,12 +173,94 @@
 			Arduino Spielekonsole
 		</h1>
 
+		<div class="row">
+
+			<div class="column">
+
+				<img src="./img/AufbauSpielekonsole_LeonKalliardos.jpg" alt="Aufbau" class="startProjekt">
+
+			</div>
+
+			<div class="column">
+
+				<img src="./img/SchaltplanSpieleKonsole_LeonKalliardos.png" alt="Schaltplan" class="startProjekt">
+
+			</div>
+
+		</div>
+
 		</section>
 		<section class="section s8">
 
 		<h1>
 			Hardware und Aufbau
 		</h1>
+
+		<div class="row">
+
+			<div class="column">
+
+				<ul class="hard">
+
+					<li>&#9744; 1x Arduino Uno</li>
+					<li>&#9744; 1x Breadboard</li>
+					<li>&#9744; 4x grüne Lampen</li>
+					<li>&#9744; 1x Infrarot-Empfänger</li>
+					<li>&#9744; 1x Infrarot-Fernbedienung</li>
+					<li>&#9744; 4x 220Ω Wiederstände</li>
+					<li>&#9744; 6x Kabel</li>
+
+				</ul>
+
+				<p class="hard">
+					Optional
+					&nbsp;
+				</p>
+
+				<ul class="hard">
+
+					<li>&#9744; 1x Box</li>
+					<li>&#9744; 1x 9v Batterien</li>
+					<li>&#9744; 2x Aufsätze der Batterien</li>
+					<li>&#9744; 1x Arduino Stromstecker</li>
+					<li>&#9744; 8x Kabel</li>
+
+				</ul>
+
+			</div>
+
+			<div class="column">
+
+				<ul class="hard">
+
+					<li>&#9744; Rechenzentrum</li>
+					<li>&#9744; Steckplatz für alle Komponenten</li>
+					<li>&#9744; Leuchten fürs Display</li>
+					<li>&#9744; Empfangen von Zahlen</li>
+					<li>&#9744; Senden von Zahlen</li>
+					<li>&#9744; Schutz der Lampen</li>
+					<li>&#9744; Verbindung aller Komponenten</li>
+
+				</ul>
+
+				<p>
+					&nbsp;
+					&nbsp;
+				</p>
+
+				<ul class="hard">
+
+					<li>&#9744; Gehäuse aller Komponenten</li>
+					<li>&#9744; Stromversorgung der Konsole</li>
+					<li>&#9744; Verbinden die Batterien an Kabel</li>
+					<li>&#9744; Anschluss an den Arduino</li>
+					<li>&#9744; Verbinden aller Komponenten</li>
+
+				</ul>
+
+			</div>
+
+		</div>
 
 		</section>
 		<section class="section s9">
@@ -207,7 +329,7 @@
 				Joysticks
 			</h1>
 
-			<div class="code c2">
+			<div class="code c1">
 				<p>
 					<span class="com">01</span> <span class="type">void</span> <span class="func">setup</span>() {
 					<span class="com">02</span>
@@ -235,7 +357,7 @@
 				Joysticks
 			</h1>
 
-			<div class="code c3">
+			<div class="code c1">
 				<p>
 					<span class="com">01</span> <span class="type">void</span> <span class="func">direction</span>() {
 					<span class="com">02</span> <span class="com">//The input from the joysticks will be converted into a direction</span>
@@ -293,7 +415,7 @@
 				Welt
 			</h1>
 
-			<div class="code c2">
+			<div class="code c1">
 				<p>
 					<span class="com">01</span> <span class="type">void</span> <span class="func">setLastWorld16x2</span>() {
 					<span class="com">02</span>
@@ -742,7 +864,7 @@
 					<span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;player =</span> <span class="char">'A'</span>; <span class="com">//movement player 1</span>
 					<span class="com">11</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">if</span>(world16x2[i][j] <span class="logic">==</span> player) {
 					<span class="com">12</span>
-					<span class="com">13</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">if</span>(direc[0</span>] <span class="logic">==</span> -1</span> <span class="logic">&&</span> world16x2[i-1</span>][j</span>] <span class="logic">!=</span> <span class="char">'X'</span> <span class="logic">&&</span> i <span class="logic">!=</span> <span class="value">0</span>) {
+					<span class="com">13</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">if</span>(direc[0</span>] <span class="logic">==</span> <span class="value">-1</span> <span class="logic">&&</span> world16x2[i-1</span>][j</span>] <span class="logic">!=</span> <span class="char">'X'</span> <span class="logic">&&</span> i <span class="logic">!=</span> <span class="value">0</span>) {
 					<span class="com">14</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newPos =</span> i <span class="logic">-</span> <span class="value">1</span>;
 					<span class="com">15</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;world16x2[i][j] <span class="logic">=</span> <span class="char">'0'</span>;
 					<span class="com">16</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="func">movePlayerCatch</span>(newPos,j, player, <span class="char">'B'</span>);
