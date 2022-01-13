@@ -146,7 +146,7 @@
 						<span class="com">02</span>
 						<span class="com">03</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">for</span>(<span class="type">int</span> i <span class="logic">=</span> <span class="value">0</span>; i <span class="logic"><</span> <span class="value">5</span>; i<span class="logic">++</span>) { <span class="com">//Eine Schleife die sich 4mal wiederholt</span>
 						<span class="com">04</span>
-						<span class="com">05</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">if</span>(num <span class="logic">%</span> <span class="value">2</span> <span class="logic">==</span> 0</span>) { <span class="com">//Wenn die Zahl gerade ist:</span>
+						<span class="com">05</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">if</span>(num <span class="logic">%</span> <span class="value">2</span> <span class="logic">==</span> <span class="value">0</span>) { <span class="com">//Wenn die Zahl gerade ist:</span>
 						<span class="com">06</span>
 						<span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bin[i] <span class="logic">=</span> <span class="value">0</span>;<span class="com">//Der Wert der entsprechenden Position wird auf 0(aus) gesetzt</span>
 						<span class="com">08</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <span class="op">else</span> { <span class="com">//Wenn die Zahl ungerade ist:</span>
@@ -299,13 +299,13 @@
 						<span class="com">05</span> <span class="com">//first joystick</span>
 						<span class="com">06</span> <span class="op">#define</span> <span class="value">playerOneX</span> A1
 						<span class="com">07</span> <span class="op">#define</span> <span class="value">playerOneY</span> A0
-						<span class="com">08</span> <span class="type">int</span> playerOnePush <span class="logic">=</span> 13</span>;
+						<span class="com">08</span> <span class="type">int</span> playerOnePush <span class="logic">=</span> <span class="value">13</span>;
 						<span class="com">09</span> <span class="type">int</span> xValueOne, yValueOne;
 						<span class="com">10</span>
 						<span class="com">11</span> <span class="com">//second joystick</span>
 						<span class="com">12</span> <span class="op">#define</span> <span class="value">playerTwoX</span> A3
 						<span class="com">13</span> <span class="op">#define</span> <span class="value">playerTwoY</span> A2
-						<span class="com">14</span> <span class="type">int</span> playerTwoPush <span class="logic">=</span> 12</span>;
+						<span class="com">14</span> <span class="type">int</span> playerTwoPush <span class="logic">=</span> <span class="value">12</span>;
 						<span class="com">15</span> <span class="type">int</span> xValueTwo, yValueTwo;
 						<!--<span class="com">16</span>-->
 					</p>
@@ -322,10 +322,10 @@
 					<p>
 						<span class="com">01</span> <span class="type">void</span> <span class="func">setup</span>() {
 						<span class="com">02</span>
-						<span class="com">03</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="com"></span>//first joystick</span>
+						<span class="com">03</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="com"></span><span class="com">//first joystick</span>
 						<span class="com">04</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="func">pinMode</span>(playerOnePush, <span class="value">INPUT_PULLUP</span>);
 						<span class="com">05</span>
-						<span class="com">06</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="com"></span>//second joystick</span>
+						<span class="com">06</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="com"></span><span class="com">//second joystick</span>
 						<span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="func">pinMode</span>(playerTwoPush, <span class="value">INPUT_PULLUP</span>);
 						<span class="com">08</span> }
 						<!--<span class="com">09</span>
@@ -529,7 +529,7 @@
 						<span class="com">11</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="logic">case</span> <span class="value">4</span>: <span class="func">testGetInput</span>();
 						<span class="com">12</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">break</span>;
 						<span class="com">13</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">default</span>:
-						<span class="com">14</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</span>;
+						<span class="com">14</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">break</span>;
 						<span class="com">15</span> &nbsp;&nbsp;&nbsp;&nbsp;}
 						<span class="com">16</span> }
 					</p>
@@ -583,7 +583,7 @@
 								<span class="com">04</span> &nbsp;&nbsp;&nbsp;&nbsp;lcd.<span class="func">write</span>(<span class="value">1</span>);
 								<span class="com">05</span> }
 								<span class="com">06</span>
-								<span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="type">byte</span> catcher16x2[] =</span> {
+								<span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="type">byte</span> catcher16x2[] <span class="logic">=</span> {
 								<span class="com">08</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="value">B01110</span>,
 								<span class="com">09</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="value">B10001</span>,
 								<span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="value">B11011</span>,
@@ -787,10 +787,10 @@
 						<span class="com">06</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="com">*/</span>
 						<span class="com">07</span>
 						<span class="com">08</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="func">clearWorld16x2</span>();
-						<span class="com">09</span> &nbsp;&nbsp;&nbsp;&nbsp;//Player one and two</span>
+						<span class="com">09</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="com">//Player one and two</span>
 						<span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;world16x2[<span class="value">1</span>][<span class="value">0</span>] <span class="logic">=</span> <span class="char">'A'</span>;
 						<span class="com">11</span> &nbsp;&nbsp;&nbsp;&nbsp;world16x2[<span class="value">1</span>][<span class="value">15</span>] <span class="logic">=</span> <span class="char">'B'</span>;
-						<span class="com">12</span> &nbsp;&nbsp;&nbsp;&nbsp;//Boxes</span>
+						<span class="com">12</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="com">//Boxes</span>
 						<span class="com">13</span> &nbsp;&nbsp;&nbsp;&nbsp;world16x2[<span class="value">0</span>][<span class="value">4</span>] <span class="logic">=</span> <span class="char">'X'</span>;
 						<span class="com">14</span> &nbsp;&nbsp;&nbsp;&nbsp;world16x2[<span class="value">1</span>][<span class="value">9</span>] <span class="logic">=</span> <span class="char">'X'</span>;
 						<span class="com">15</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="func">setLastWorld16x2</span>();
@@ -844,11 +844,11 @@
 						<span class="com">07</span>
 						<span class="com">08</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">for</span>(<span class="type">int</span> j <span class="logic">=</span> <span class="value">0</span>; j <span class="logic"><</span> <span class="value">16</span>; j<span class="logic">++</span>) {
 						<span class="com">09</span>
-						<span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;player =</span> <span class="char">'A'</span>; <span class="com">//movement player 1</span>
+						<span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;player <span class="logic">=</span> <span class="char">'A'</span>; <span class="com">//movement player 1</span>
 						<span class="com">11</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">if</span>(world16x2[i][j] <span class="logic">==</span> player) {
 						<span class="com">12</span>
-						<span class="com">13</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">if</span>(direc[0</span>] <span class="logic">==</span> <span class="value">-1</span> <span class="logic">&&</span> world16x2[i-1</span>][j</span>] <span class="logic">!=</span> <span class="char">'X'</span> <span class="logic">&&</span> i <span class="logic">!=</span> <span class="value">0</span>) {
-						<span class="com">14</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newPos =</span> i <span class="logic">-</span> <span class="value">1</span>;
+						<span class="com">13</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">if</span>(direc[<span class="value">0</span>] <span class="logic">==</span> <span class="value">-1</span> <span class="logic">&&</span> world16x2[i<span class="logic">-</span> <span class="value">1</span>][j] <span class="logic">!=</span> <span class="char">'X'</span> <span class="logic">&&</span> i <span class="logic">!=</span> <span class="value">0</span>) {
+						<span class="com">14</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;newPos <span class="logic">=</span> i <span class="logic">-</span> <span class="value">1</span>;
 						<span class="com">15</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;world16x2[i][j] <span class="logic">=</span> <span class="char">'0'</span>;
 						<span class="com">16</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="func">movePlayerCatch</span>(newPos,j, player, <span class="char">'B'</span>);
 					</p>
