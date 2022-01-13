@@ -18,7 +18,7 @@ body {
 	color: #0b1c47;
 	font-size: 3rem;
 	position: absolute;
-	top: 10%;
+	top: 8%;
 	left: 50%;
 	transform: translate(-50%, -10%);
 }
@@ -29,7 +29,7 @@ body {
 	white-space: pre-line;
 	font-size: 2rem;
 	position: absolute;
-	top: 20%;
+	top: 18%;
 	left: 50%;
 	transform: translate(-50%, -25%);
   }
@@ -55,10 +55,18 @@ body {
 	color: #d699b6;
 }
 
+.char {
+	color: #dbbc7f;
+}
+
+.logic {
+	color: #e69875;
+}
+
 .code {
 
 	background-color: #2f383e;
-	color: #F5F5E9;
+	color: #d3c6aa;
 	border: 1vw solid #2f383e;
 	font-family: "Courier New";
 	white-space: pre-line;
@@ -85,13 +93,13 @@ body {
 
 }
 
-.s1 h1 {
+.start h1 {
 	top: 35%;
 	left: 50%;
 	transform: translate(-50%, -40%);
 }
 
-.s1 h2 {
+.start h2 {
 	top: 35%;
 	left: 50%;
 	transform: translate(-50%, 40%);
@@ -111,13 +119,13 @@ body {
 
 }
 
-.s18 h1 {
+.end h1 {
 	top: 40%;
 	left: 50%;
 	transform: translate(-50%, -40%);
 }
 
-.s18 h2 {
+.end h2 {
 	top: 40%;
 	left: 50%;
 	transform: translate(-50%, 40%);

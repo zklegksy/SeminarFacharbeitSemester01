@@ -17,7 +17,7 @@
 
     <div id="fullpage">
 
-      <section class="section s1">
+      <section class="section start">
 
         <h1>
 			Seminar Facharbeit
@@ -104,24 +104,25 @@
 
 		  <div class="code c1">
 			  <p>
-				  01
-				  02
-				  03
-				  04
-				  05
-				  06
-				  07
-				  08
-				  09
-				  10
-				  11
-				  12
-				  13
-				  14
-				  15
-				  16
+				  <span class="com">01</span> <span class="type">int</span> <span class="func">decToBin</span>() { <span class="com">//Die Funktion wandelt den Dezimalwert in Binär um</span>
+				  <span class="com">02</span>
+				  <span class="com">03</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">for</span>(<span class="type">int</span> i <span class="logic">=</span> <span class="value">0</span>; i <span class="logic"><</span> <span class="value">5</span>; i<span class="logic">++</span>) { <span class="com">//Eine Schleife die sich 4mal wiederholt</span>
+				  <span class="com">04</span>
+				  <span class="com">05</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">if</span>(num <span class="logic">%</span> <span class="value">2</span> <span class="logic">==</span> 0</span>) { <span class="com">//Wenn die Zahl gerade ist:</span>
+				  <span class="com">06</span>
+				  <span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bin[i] <span class="logic">=</span> <span class="value">0</span>; <span class="com">//Der Wert der entsprechenden Position wird auf 0(aus) gesetzt</span>
+				  <span class="com">08</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} <span class="op">else</span> { <span class="com">//Wenn die Zahl ungerade ist:</span>
+				  <span class="com">09</span>
+				  <span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bin[i] <span class="logic">=</span> <span class="value">1</span>; <span class="com">//Der Wert der entsprechenden Position wird auf 1(an) gesetzt</span>
+				  <span class="com">11</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+				  <span class="com">12</span>
+				  <span class="com">13</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;num <span class="logic">=</span> num <span class="logic">/</span> <span class="value">2</span>; <span class="com">//Die Zahl wird halbiert</span>
+				  <span class="com">14</span> &nbsp;&nbsp;&nbsp;&nbsp;}
+				  <span class="com">15</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">return</span> <span class="value">0</span>;
+				  <span class="com">16</span> }
 			  </p>
 		  </div>
+
       </section>
 
 	  <section class="section s7">
@@ -147,22 +148,22 @@
 
 		  <div class="code c1">
 			  <p>
-				  <span class="com">01</span> <span class="type">void</span> <span class="func">worldUpdated16x2()</span> {
-				  <span class="com">02</span> 	<span class="op">for</span>(<span class="type">int</span> i <span class="type">int</span> <span class="type">int</span>; i <span class="op"><</span> <span class="value">2</span>; i<span class="op">++</span>) {
-				  <span class="com">03</span> 		<span class="op">for</span>(<span class="type">int</span> j <span class="type">int</span> <span class="type">int</span>; j <span class="op"><</span> <span class="value">16</span>; j<span class="op">++</span>) {
+				  <span class="com">01</span> <span class="type">void</span> <span class="func">worldUpdated16x2</span>() {
+				  <span class="com">02</span>
+				  <span class="com">03</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">for</span>(<span class="type">int</span> i <span class="type">int</span> <span class="type">int</span>; i <span class="logic"><</span> <span class="value">2</span>; i<span class="logic">++</span>) {
 				  <span class="com">04</span>
-				  <span class="com">05</span> 			<span class="op">if</span>(world16x2_lastUpdate[i][j] <span class="op">!=</span> world16x2[i][j]) {
-				  <span class="com">06</span> 				return true; //World updated
-				  <span class="com">07</span> 			}
-				  <span class="com">08</span> 		}
-				  <span class="com">09</span> 	}
-				  <span class="com">10</span> 	return false; //World did not update
-				  <span class="com">11</span> }
-				  <span class="com">12</span>
+				  <span class="com">05</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">for</span>(<span class="type">int</span> j <span class="type">int</span> <span class="type">int</span>; j <span class="logic"><</span> <span class="value">16</span>; j<span class="logic">++</span>) {
+				  <span class="com">06</span>
+				  <span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">if</span>(world16x2_lastUpdate[i][j] <span class="logic">!=</span> world16x2[i][j]) {
+				  <span class="com">08</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">return</span> <span class="value">true</span>; <span class="com">//World updated</span>
+				  <span class="com">09</span>
+				  <span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+				  <span class="com">11</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+				  <span class="com">12</span> &nbsp;&nbsp;&nbsp;&nbsp;}
 				  <span class="com">13</span>
-				  <span class="com">14</span>
+				  <span class="com">14</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">return</span> <span class="value">false</span>; <span class="com">//World did not update</span>
 				  <span class="com">15</span>
-				  <span class="com">16</span>
+				  <span class="com">16</span> }
 			  </p>
 		  </div>
 		
@@ -172,6 +173,69 @@
         <h1>
 			Joysticks
 		</h1>
+
+		  <div class="code c1">
+			  <p>
+				  <span class="com">01</span> <span class="com">//Joysticks</span>
+				  <span class="com">02</span> <span class="type">int</span> inputs[<span class="value">6</span>];
+				  <span class="com">03</span> <span class="type">int</span> direc[<span class="value">2</span>];
+				  <span class="com">04</span>
+				  <span class="com">05</span> <span class="com">//first joystick</span>
+				  <span class="com">06</span> <span class="op">#define</span> <span class="value">playerOneX</span> A1
+				  <span class="com">07</span> <span class="op">#define</span> <span class="value">playerOneY</span> A0
+				  <span class="com">08</span> <span class="type">int</span> playerOnePush <span class="logic">=</span> 13</span>;
+				  <span class="com">09</span> <span class="type">int</span> xValueOne, yValueOne;
+				  <span class="com">10</span>
+				  <span class="com">11</span> <span class="com">//second joystick</span>
+				  <span class="com">12</span> <span class="op">#define</span> <span class="value">playerTwoX</span> A3
+				  <span class="com">13</span> <span class="op">#define</span> <span class="value">playerTwoY</span> A2
+				  <span class="com">14</span> <span class="type">int</span> playerTwoPush <span class="logic">=</span> 12</span>;
+				  <span class="com">15</span> <span class="type">int</span> xValueTwo, yValueTwo;
+				  <!--<span class="com">16</span>-->
+			  </p>
+		  </div>
+
+		  <!--<div class="code c2">
+			  <p>
+				  <span class="com">01</span> <span class="type">void</span> <span class="func">setup</span>() {
+				  <span class="com">02</span>
+				  <span class="com">03</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="com">03</span>//first joystick</span>
+				  <span class="com">04</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="func">pinMode</span>(playerOnePush, <span class="value">INPUT_PULLUP</span>);
+				  <span class="com">05</span>
+				  <span class="com">06</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="com">03</span>//second joystick</span>
+				  <span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="func">pinMode</span>(playerTwoPush, <span class="value">INPUT_PULLUP</span>);
+				  <span class="com">08</span> }
+				  <span class="com">09</span>
+				  <span class="com">10</span>
+				  <span class="com">11</span>
+				  <span class="com">12</span>
+				  <span class="com">13</span>
+				  <span class="com">14</span>
+				  <span class="com">15</span>
+				  <span class="com">16</span>
+			  </p>
+		  </div>-->
+
+		  <!--<div class="code c3">
+			  <p>
+				  <span class="com">01</span> <span class="type">void</span> <span class="func">direction</span>() {
+				  <span class="com">02</span> <span class="com">//The input from the joysticks will be converted into a direction</span>
+				  <span class="com">03</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="func">getInputStick</span>();
+				  <span class="com">04</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="com">//Updates the array with the inputs, so we will always use the most recent ones</span>
+				  <span class="com">05</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="com">//Direction for the first stick</span>
+				  <span class="com">06</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">if</span>(inputs[<span class="value">0</span>] <span class="logic">></span> <span class="value">700</span>) {  <span class="com">//Up on the Y-Axis</span>
+				  <span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;direc[<span class="value">0</span>] <span class="logic">=</span> <span class="value">1</span>;
+				  <span class="com">08</span> &nbsp;&nbsp;&nbsp;&nbsp;}<span class="op">else if</span>(inputs[<span class="value">0</span>] <span class="logic"><</span> <span class="value">400</span>) {  <span class="com">//Down on the Y-Axis</span>
+				  <span class="com">09</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;direc[<span class="value">0</span>] <span class="logic">=</span> <span class="value">-1</span>;
+				  <span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;}<span class="op">else if</span>(inputs[1</span>] <span class="logic"><</span> <span class="value">400</span>) {  <span class="com">//Left on the X-Axis</span>
+				  <span class="com">11</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;direc[<span class="value">0</span>] <span class="logic">=</span> <span class="value">2</span>;
+				  <span class="com">12</span> &nbsp;&nbsp;&nbsp;&nbsp;}<span class="op">else if</span>(inputs[1</span>] <span class="logic">></span> <span class="value">700</span>) {  <span class="com">//Right on the X-Axis</span>
+				  <span class="com">13</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;direc[<span class="value">0</span>] <span class="logic">=</span> <span class="value">-2</span>;
+				  <span class="com">14</span> &nbsp;&nbsp;&nbsp;&nbsp;}<span class="op">else</span> {  <span class="com">//No Movement at all</span>
+				  <span class="com">15</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;direc[<span class="value">0</span>] <span class="logic">=</span> <span class="value">0</span>;
+				  <span class="com">16</span> &nbsp;&nbsp;&nbsp;&nbsp;}
+			  </p>
+		  </div>-->
 		
       </section>
 	  <section class="section s11">
@@ -179,6 +243,49 @@
         <h1>
 			Welt
 		</h1>
+
+		  <div class="code c1">
+			  <p>
+				  <span class="com">01</span> <span class="com">//world</span>
+				  <span class="com">02</span> <span class="type">char</span> world16x2[<span class="value">2</span>][<span class="value">16</span>];
+				  <span class="com">03</span> <span class="type">char</span> world16x2_lastUpdate[<span class="value">2</span>][<span class="value">16</span>];
+				  <span class="com">04</span>
+				  <span class="com">05</span>
+				  <span class="com">06</span> <span class="type">void</span> <span class="func">clearWorld16x2</span>() {
+				  <span class="com">07</span>
+				  <span class="com">08</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">for</span>(<span class="type">int</span> i <span class="logic">=</span> <span class="value">0</span>; i <span class="logic"><</span> <span class="value">2</span>; i<span class="logic">++</span>) {
+				  <span class="com">09</span>
+				  <span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">for</span>(<span class="type">int</span> j <span class="logic">=</span> <span class="value">0</span>; j <span class="logic"><</span> <span class="value">16</span>; j<span class="logic">++</span>) {
+				  <span class="com">11</span>
+				  <span class="com">12</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;world16x2[i][j] <span class="logic">=</span> <span class="char">'0'</span>;
+				  <span class="com">13</span>
+				  <span class="com">14</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}
+				  <span class="com">15</span> &nbsp;&nbsp;&nbsp;&nbsp;}
+				  <span class="com">16</span> }
+			  </p>
+		  </div>
+
+		  <!--Einen Weg finden, diese Funktion beim scrollen anzuzeigen
+		  <div class="code c2">
+			  <p>
+				  <span class="com">01</span> <span class="type">void</span> <span class="func">setLastWorld16x2</span>() {
+				  <span class="com">02</span>
+				  <span class="com">03</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">for</span>(<span class="type">int</span> j <span class="logic">=</span> <span class="value">0</span>; j <span class="logic"><</span> <span class="value">16</span>; j<span class="logic">++</span>) {
+				  <span class="com">04</span>
+				  <span class="com">05</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;world16x2_lastUpdate[i][j] <span class="logic">=</span> world16x2[i][j];
+				  <span class="com">06</span>
+				  <span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;}
+				  <span class="com">08</span>
+				  <span class="com">09</span> }
+				  <span class="com">10</span>
+				  <span class="com">11</span>
+				  <span class="com">12</span>
+				  <span class="com">13</span>
+				  <span class="com">14</span>
+				  <span class="com">15</span>
+				  <span class="com">16</span>
+			  </p>
+		  </div>-->
 		
       </section>
 	  <section class="section s12">
@@ -186,6 +293,48 @@
         <h1>
 			Menü
 		</h1>
+
+		  <div class="code c1">
+			  <p>
+				  <span class="com">01</span> <span class="type">void</span> <span class="func">movementMenue</span>() {
+				  <span class="com">02</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="func">direction</span>(); <span class="com">//Update the direction</span>
+				  <span class="com">03</span>
+				  <span class="com">04</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">if</span>(direc[<span class="value">0</span>] <span class="logic">==</span> -1</span> <span class="logic">&&</span> menuePos <span class="logic">!=</span> 1</span>) {
+				  <span class="com">05</span>
+				  <span class="com">06</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;menuePos<span class="logic">--</span>;
+				  <span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;} <span class="op">else if</span>(direc[<span class="value">0</span>] <span class="logic">==</span> 1</span> <span class="logic">&&</span> menuePos <span class="logic">!=</span> 4</span>) {
+				  <span class="com">08</span>
+				  <span class="com">09</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;menuePos<span class="logic">++</span>;
+				  <span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;} <span class="op">else if</span>(direc[<span class="value">0</span>] <span class="logic">==</span> 2</span>) {
+				  <span class="com">11</span>
+				  <span class="com">12</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;game <span class="logic">=</span> menuePos;
+				  <span class="com">13</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="func">gameStart</span>();
+				  <span class="com">14</span>
+				  <span class="com">15</span> &nbsp;&nbsp;&nbsp;&nbsp;}
+				  <span class="com">16</span> }
+			  </p>
+		  </div>
+
+		  <!--<div class="code c2">
+			  <p>
+				  <span class="com">01</span> <span class="com">//menue</span>
+				  <span class="com">02</span> <span class="type">char</span> selection[<span class="value">6</span>][<span class="value">17</span>] <span class="logic">=</span> {
+				  <span class="com">03</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="char">"----------------",</span>
+				  <span class="com">04</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="char">"2P - Catch",</span>
+				  <span class="com">05</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="char">"1P - Snake",</span>
+				  <span class="com">06</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="char">"1P - Tetris",</span>
+				  <span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="char">"Input Test",</span>
+				  <span class="com">08</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="char">"----------------"</span>
+				  <span class="com">09</span> };
+				  <span class="com">10</span> <span class="type">int</span> menuePos <span class="logic">=</span> <span class="value">1</span>;
+				  <span class="com">11</span>
+				  <span class="com">12</span> lcd.<span class="func">print</span>(<span class="char">"> "</span>);
+				  <span class="com">13</span>
+				  <span class="com">14</span> &nbsp;&nbsp;&nbsp;&nbsp;lcd.<span class="func">print</span>(selection[menuePos]);
+				  <span class="com">15</span> &nbsp;&nbsp;&nbsp;&nbsp;lcd.<span class="func">setCursor</span>(<span class="value">0</span>,<span class="value">1</span>);
+				  <span class="com">16</span> &nbsp;&nbsp;&nbsp;&nbsp;lcd.<span class="func">print</span>(selection[menuePos <span class="logic">+</span> <span class="value">1</span>]);
+			  </p>
+		  </div>-->
 		
       </section>
 	  <section class="section s13">
@@ -193,6 +342,69 @@
         <h1>
 			Start und Ende
 		</h1>
+
+		  <div class="code c1">
+			  <p>
+				  <span class="com">01</span> <span class="com">//games</span>
+				  <span class="com">02</span> <span class="type">int</span> game <span class="logic">=</span> <span class="value">0</span>;
+				  <span class="com">03</span> <span class="com">/**</span>
+				  <span class="com">04</span> <span class="com">&nbsp;* 0 == Menue,</span>
+				  <span class="com">05</span> <span class="com">&nbsp;* 1 == Catch,</span>
+				  <span class="com">06</span> <span class="com">&nbsp;* 2 == Snake,</span>
+				  <span class="com">07</span> <span class="com">&nbsp;* 3 == Tetris</span>
+				  <span class="com">08</span> <span class="com">&nbsp;* 4 == Test Inputs</span>
+				  <span class="com">09</span> <span class="com">&nbsp;*/</span>
+				  <span class="com">10</span> <span class="type">bool</span> gameStatus <span class="logic">=</span> <span class="value">false</span>;
+				  <span class="com">11</span>
+				  <span class="com">12</span>
+				  <span class="com">13</span>
+				  <span class="com">14</span>
+				  <span class="com">15</span>
+				  <span class="com">16</span>
+			  </p>
+		  </div>
+
+		  <!--<div class="code c2">
+			  <p>
+				  <span class="com">01</span> <span class="type">void</span> lcd.<span class="func">gameStart</span>() {
+				  <span class="com">02</span>
+				  <span class="com">03</span> &nbsp;&nbsp;&nbsp;&nbsp;gameStatus <span class="logic">=</span> <span class="value">true</span>;
+				  <span class="com">04</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="logic">switch</span> (game) {
+				  <span class="com">05</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="logic">case</span> <span class="value">1</span>: lcd.<span class="func">Catch</span>();
+				  <span class="com">06</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">break</span>;
+				  <span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="logic">case</span> <span class="value">2</span>: lcd.<span class="func">Snake</span>();
+				  <span class="com">08</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">break</span>;
+				  <span class="com">09</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="logic">case</span> <span class="value">3</span>: lcd.<span class="func">Tetris</span>();
+				  <span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">break</span>;
+				  <span class="com">11</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="logic">case</span> <span class="value">4</span>: lcd.<span class="func">testGetInput</span>();
+				  <span class="com">12</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">break</span>;
+				  <span class="com">13</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">default</span>:
+				  <span class="com">14</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</span>;
+				  <span class="com">15</span> &nbsp;&nbsp;&nbsp;&nbsp;}
+				  <span class="com">16</span> }
+			  </p>
+		  </div>-->
+
+		  <!--<div class="code c3">
+			  <p>
+				  <span class="com">01</span> <span class="type">void</span> <span class="func">gameOver</span>() {
+				  <span class="com">02</span>
+				  <span class="com">03</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="func">displayReset</span>(<span class="value">0</span>);
+				  <span class="com">04</span>
+				  <span class="com">05</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="func">clearWorld16x2</span>();
+				  <span class="com">06</span>
+				  <span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;gameStatus <span class="logic">=</span> <span class="value">false</span>;
+				  <span class="com">08</span> &nbsp;&nbsp;&nbsp;&nbsp;game <span class="logic">=</span> <span class="value">0</span>;
+				  <span class="com">09</span>
+				  <span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;menuePos <span class="logic">=</span> <span class="value">1</span>;
+				  <span class="com">11</span> &nbsp;&nbsp;&nbsp;&nbsp;lastMenuePos <span class="logic">=</span> <span class="value">-1</span>;
+				  <span class="com">12</span>
+				  <span class="com">13</span> }
+				  <span class="com">14</span>
+				  <span class="com">15</span>
+				  <span class="com">16</span>
+			  </p>
+		  </div>-->
 		
       </section>
 	  <section class="section s14">
@@ -200,6 +412,27 @@
         <h1>
 			Eigende Charaktere
 		</h1>
+
+		  <div class="code c1">
+			  <p>
+				  <span class="com">01</span>
+				  <span class="com">02</span>
+				  <span class="com">03</span>
+				  <span class="com">04</span>
+				  <span class="com">05</span>
+				  <span class="com">06</span>
+				  <span class="com">07</span>
+				  <span class="com">08</span>
+				  <span class="com">09</span>
+				  <span class="com">10</span>
+				  <span class="com">11</span>
+				  <span class="com">12</span>
+				  <span class="com">13</span>
+				  <span class="com">14</span>
+				  <span class="com">15</span>
+				  <span class="com">16</span>
+			  </p>
+		  </div>
 		
       </section>
 	  <section class="section s15">
@@ -207,45 +440,31 @@
         <h1>
 			Beispiel Spiel "Catch"
 		</h1>
-		
-      </section>
-	  <section class="section s16">
-
-        <h1>
-			Beispiel Spiel "Catch"
-		</h1>
-		
-      </section>
-	  <section class="section s17">
-
-        <h1>
-			Beispiel Spiel "Catch"
-		</h1>
 
 		  <div class="code c1">
 			  <p>
-				  01
-				  02
-				  03
-				  04
-				  05
-				  06
-				  07
-				  08
-				  09
-				  10
-				  11
-				  12
-				  13
-				  14
-				  15
-				  16
+				  <span class="com">01</span>
+				  <span class="com">02</span>
+				  <span class="com">03</span>
+				  <span class="com">04</span>
+				  <span class="com">05</span>
+				  <span class="com">06</span>
+				  <span class="com">07</span>
+				  <span class="com">08</span>
+				  <span class="com">09</span>
+				  <span class="com">10</span>
+				  <span class="com">11</span>
+				  <span class="com">12</span>
+				  <span class="com">13</span>
+				  <span class="com">14</span>
+				  <span class="com">15</span>
+				  <span class="com">16</span>
 			  </p>
 		  </div>
-
+		
       </section>
 
-	  <section class="section s18">
+	  <section class="section end">
 
         <h1>
 			Ende
