@@ -357,9 +357,9 @@
 						<span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;direc[<span class="value">0</span>] <span class="logic">=</span> <span class="value">1</span>;
 						<span class="com">08</span> &nbsp;&nbsp;&nbsp;&nbsp;}<span class="op">else if</span>(inputs[<span class="value">0</span>] <span class="logic"><</span> <span class="value">400</span>) {  <span class="com">//Down on the Y-Axis</span>
 						<span class="com">09</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;direc[<span class="value">0</span>] <span class="logic">=</span> <span class="value">-1</span>;
-						<span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;}<span class="op">else if</span>(inputs[1</span>] <span class="logic"><</span> <span class="value">400</span>) {  <span class="com">//Left on the X-Axis</span>
+						<span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;}<span class="op">else if</span>(inputs[<span class="value">1</span>] <span class="logic"><</span> <span class="value">400</span>) {  <span class="com">//Left on the X-Axis</span>
 						<span class="com">11</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;direc[<span class="value">0</span>] <span class="logic">=</span> <span class="value">2</span>;
-						<span class="com">12</span> &nbsp;&nbsp;&nbsp;&nbsp;}<span class="op">else if</span>(inputs[1</span>] <span class="logic">></span> <span class="value">700</span>) {  <span class="com">//Right on the X-Axis</span>
+						<span class="com">12</span> &nbsp;&nbsp;&nbsp;&nbsp;}<span class="op">else if</span>(inputs[<span class="value">1</span>] <span class="logic">></span> <span class="value">700</span>) {  <span class="com">//Right on the X-Axis</span>
 						<span class="com">13</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;direc[<span class="value">0</span>] <span class="logic">=</span> <span class="value">-2</span>;
 						<span class="com">14</span> &nbsp;&nbsp;&nbsp;&nbsp;}<span class="op">else</span> {  <span class="com">//No Movement at all</span>
 						<span class="com">15</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;direc[<span class="value">0</span>] <span class="logic">=</span> <span class="value">0</span>;
@@ -463,13 +463,13 @@
 						<span class="com">01</span> <span class="type">void</span> <span class="func">movementMenue</span>() {
 						<span class="com">02</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="func">direction</span>(); <span class="com">//Update the direction</span>
 						<span class="com">03</span>
-						<span class="com">04</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">if</span>(direc[<span class="value">0</span>] <span class="logic">==</span> -1</span> <span class="logic">&&</span> menuePos <span class="logic">!=</span> 1</span>) {
+						<span class="com">04</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">if</span>(direc[<span class="value">0</span>] <span class="logic">==</span> <span class="value">-1</span> <span class="logic">&&</span> menuePos <span class="logic">!=</span> <span class="value">1</span>) {
 						<span class="com">05</span>
 						<span class="com">06</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;menuePos<span class="logic">--</span>;
-						<span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;} <span class="op">else if</span>(direc[<span class="value">0</span>] <span class="logic">==</span> 1</span> <span class="logic">&&</span> menuePos <span class="logic">!=</span> 4</span>) {
+						<span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;} <span class="op">else if</span>(direc[<span class="value">0</span>] <span class="logic">==</span> <span class="value">1</span> <span class="logic">&&</span> menuePos <span class="logic">!=</span> <span class="value">4</span>) {
 						<span class="com">08</span>
 						<span class="com">09</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;menuePos<span class="logic">++</span>;
-						<span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;} <span class="op">else if</span>(direc[<span class="value">0</span>] <span class="logic">==</span> 2</span>) {
+						<span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;} <span class="op">else if</span>(direc[<span class="value">0</span>] <span class="logic">==</span> <span class="value">2</span>) {
 						<span class="com">11</span>
 						<span class="com">12</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;game <span class="logic">=</span> menuePos;
 						<span class="com">13</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="func">gameStart</span>();
@@ -516,17 +516,17 @@
 
 				<div class="code c1">
 					<p>
-						<span class="com">01</span> <span class="type">void</span> lcd.<span class="func">gameStart</span>() {
+						<span class="com">01</span> <span class="type">void</span> <span class="func">gameStart</span>() {
 						<span class="com">02</span>
 						<span class="com">03</span> &nbsp;&nbsp;&nbsp;&nbsp;gameStatus <span class="logic">=</span> <span class="value">true</span>;
 						<span class="com">04</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="logic">switch</span> (game) {
-						<span class="com">05</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="logic">case</span> <span class="value">1</span>: lcd.<span class="func">Catch</span>();
+						<span class="com">05</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="logic">case</span> <span class="value">1</span>: <span class="func">Catch</span>();
 						<span class="com">06</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">break</span>;
-						<span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="logic">case</span> <span class="value">2</span>: lcd.<span class="func">Snake</span>();
+						<span class="com">07</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="logic">case</span> <span class="value">2</span>: <span class="func">Snake</span>();
 						<span class="com">08</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">break</span>;
-						<span class="com">09</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="logic">case</span> <span class="value">3</span>: lcd.<span class="func">Tetris</span>();
+						<span class="com">09</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="logic">case</span> <span class="value">3</span>: <span class="func">Tetris</span>();
 						<span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">break</span>;
-						<span class="com">11</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="logic">case</span> <span class="value">4</span>: lcd.<span class="func">testGetInput</span>();
+						<span class="com">11</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="logic">case</span> <span class="value">4</span>: <span class="func">testGetInput</span>();
 						<span class="com">12</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">break</span>;
 						<span class="com">13</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">default</span>:
 						<span class="com">14</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;break</span>;
@@ -788,11 +788,11 @@
 						<span class="com">07</span>
 						<span class="com">08</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="func">clearWorld16x2</span>();
 						<span class="com">09</span> &nbsp;&nbsp;&nbsp;&nbsp;//Player one and two</span>
-						<span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;world16x2[1</span>][<span class="value">0</span>] <span class="logic">=</span> <span class="char">'A'</span>;
-						<span class="com">11</span> &nbsp;&nbsp;&nbsp;&nbsp;world16x2[1</span>][<span class="value">15</span>] <span class="logic">=</span> <span class="char">'B'</span>;
+						<span class="com">10</span> &nbsp;&nbsp;&nbsp;&nbsp;world16x2[<span class="value">1</span>][<span class="value">0</span>] <span class="logic">=</span> <span class="char">'A'</span>;
+						<span class="com">11</span> &nbsp;&nbsp;&nbsp;&nbsp;world16x2[<span class="value">1</span>][<span class="value">15</span>] <span class="logic">=</span> <span class="char">'B'</span>;
 						<span class="com">12</span> &nbsp;&nbsp;&nbsp;&nbsp;//Boxes</span>
-						<span class="com">13</span> &nbsp;&nbsp;&nbsp;&nbsp;world16x2[0</span>][<span class="value">4</span>] <span class="logic">=</span> <span class="char">'X'</span>;
-						<span class="com">14</span> &nbsp;&nbsp;&nbsp;&nbsp;world16x2[1</span>][<span class="value">9</span>] <span class="logic">=</span> <span class="char">'X'</span>;
+						<span class="com">13</span> &nbsp;&nbsp;&nbsp;&nbsp;world16x2[<span class="value">0</span>][<span class="value">4</span>] <span class="logic">=</span> <span class="char">'X'</span>;
+						<span class="com">14</span> &nbsp;&nbsp;&nbsp;&nbsp;world16x2[<span class="value">1</span>][<span class="value">9</span>] <span class="logic">=</span> <span class="char">'X'</span>;
 						<span class="com">15</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="func">setLastWorld16x2</span>();
 						<span class="com">16</span> }
 					</p>
@@ -808,7 +808,7 @@
 				<div class="code c1">
 					<p>
 						<span class="com">01</span> <span class="type">void</span> <span class="func">drawWorldCatch</span>() {
-						<span class="com">02</span> &nbsp;&nbsp;&nbsp;&nbsp;for</span>(<span class="type">int</span> i <span class="logic">=</span> <span class="value">0</span>; i <span class="logic"><</span> <span class="value">2</span>; i<span class="logic">++</span>) {
+						<span class="com">02</span> &nbsp;&nbsp;&nbsp;&nbsp;<span class="op">for</span>(<span class="type">int</span> i <span class="logic">=</span> <span class="value">0</span>; i <span class="logic"><</span> <span class="value">2</span>; i<span class="logic">++</span>) {
 						<span class="com">03</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">for</span>(<span class="type">int</span> j <span class="logic">=</span> <span class="value">0</span>; j <span class="logic"><</span> <span class="value">16</span>; j<span class="logic">++</span>) {
 						<span class="com">04</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lcd.<span class="func">setCursor</span>(j,i);
 						<span class="com">05</span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="op">if</span>(world16x2[i][j] <span class="logic">!=</span> <span class="char">'0'</span>) {
